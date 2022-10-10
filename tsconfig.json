@@ -1,6 +1,11 @@
 {
   "compilerOptions": {
-    "target": "es5",
+    "baseUrl": "./",
+    "paths": {
+      "@/pages/*": ["./src/pages/*"],
+      "@/components/*": ["./src/components/*"]
+    },
+    "target": "ES2022",
     "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
     "skipLibCheck": true,
